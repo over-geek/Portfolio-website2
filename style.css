@@ -12,9 +12,15 @@ body {
 }
 
 header,
-.main-content {
-  background-color: #fff;
+.main-content,
+.card-container {
   padding: 0 24px;
+}
+
+header,
+.main-content,
+.cards {
+  background-color: #fff;
 }
 
 /* Header Section */
@@ -111,4 +117,115 @@ header {
 
 .main-content-container > div {
   word-break: normal;
+}
+
+/* Card Section */
+.card-container { 
+  display: grid;
+  grid-template-rows: repeat(auto, 4);
+  row-gap: 60px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border: 1px solid black;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 16px;
+  padding: 16px;
+  border: 1px solid black;
+}
+
+.screenshot {
+  width: 100%;
+}
+
+.card-description {
+  display: flex;
+  flex-direction: column;
+  overflow-wrap: break-word;
+}
+
+.card-title {
+  color: #172b4d;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.card-bg-info {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.card-bg-info p {
+  color: #344563;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.card-bg-info ul {
+  display: flex;
+  color: #7a869a;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.card-bg-info ul li {
+  margin-left: 30px;
+}
+
+.card-text {
+  color: #344563;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  padding-top: 10px;
+}
+
+.card-skills {
+  padding-top: 10px;
+}
+
+.card-skills ul li {
+  float: left;
+  list-style: none;
+  align-items: center;
+  margin-right: 8px;
+  background: #ebebff;
+  color: #6070ff;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  padding: 4px 12px;
+  border-radius: 8px;
+}
+
+/* Button */
+.btn {
+  color: #6070ff;
+  background: transparent;
+  padding: 12px;
+  margin-top: 25px;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 24px;
+  cursor: pointer
+}
+
+.btn:hover {
+  background-color: #6070ff;
+  color: #fff;
+}
+
+.btn:active {
+  background-color: #2230d2;
 }
