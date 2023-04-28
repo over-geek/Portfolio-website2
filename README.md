@@ -114,7 +114,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git clone https://github.com/over-geek/Portfolio-Project.git
+  git clone https://github.com/over-geek/Portfolio-website2.git
 ```
 --->
 
