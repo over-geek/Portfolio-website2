@@ -11,7 +11,8 @@ body {
   background-color: #f7f7f9;
 }
 
-header {
+header,
+.main-content {
   background-color: #fff;
   padding: 0 24px;
 }
@@ -24,7 +25,6 @@ header {
   justify-content: space-between;
   padding-top: 20px;
   padding-bottom: 20px;
-  border: 1px solid black;
 }
 
 /* Logo */
@@ -66,4 +66,49 @@ header {
   transform: translateY(10px);
 }
 
-/*  */
+/* Main Section */
+.main-content {
+  height: 600px;
+  display: flex;
+  align-items: center;
+  background-image: url("asset/header-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-bottom-left-radius: 80px;
+}
+
+.main-content h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  color: #172b4d;
+  margin-bottom: 10px;
+}
+
+.main-content-container p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 24px;
+  color: #344563;
+  margin-bottom: 10px;
+}
+
+#social-heading {
+  color: #7f8cff;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.social-icons ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.social-icons ul li {
+  margin-right: 15px;
+}
+
+.main-content-container > div {
+  overflow: break-word;
+}
