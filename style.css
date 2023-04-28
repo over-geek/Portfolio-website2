@@ -120,9 +120,9 @@ header {
 }
 
 /* Card Section */
-.card-container { 
+.card-container {
   display: grid;
-  grid-template-rows: repeat(auto, 4);
+  grid-template-rows: repeat(4, auto);
   row-gap: 60px;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -216,7 +216,7 @@ header {
   font-size: 17px;
   font-weight: 500;
   line-height: 24px;
-  cursor: pointer
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -298,13 +298,19 @@ header {
   font-weight: 500;
 }
 
+.language-item > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .language-container > div:nth-child(2) {
   padding: 12px;
 }
 
 .language-item {
   padding: 9px 12px 9px 12px;
-  background-color: #F7F7F9;
+  background-color: #f7f7f9;
 }
 
 .language-item p {
@@ -319,12 +325,6 @@ header {
   display: flex;
   flex-direction: column;
   gap: 24px;
-}
-
-.language-item > div {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
 }
 
 .bottom-bar {
