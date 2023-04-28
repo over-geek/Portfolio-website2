@@ -260,7 +260,14 @@ header {
 }
 
 #about-heading {
-  padding-bottom: 15px;
+  margin-bottom: 26px;
+}
+
+#about-heading a {
+  text-decoration: none;
+  color: #7f8cff;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 
 .about .btn {
