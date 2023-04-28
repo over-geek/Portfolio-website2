@@ -110,5 +110,5 @@ header {
 }
 
 .main-content-container > div {
-  overflow: break-word;
+  word-break: normal;
 }
