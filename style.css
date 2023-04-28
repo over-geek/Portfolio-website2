@@ -126,7 +126,6 @@ header {
   row-gap: 60px;
   padding-top: 50px;
   padding-bottom: 50px;
-  border: 1px solid black;
 }
 
 .cards {
@@ -135,7 +134,6 @@ header {
   justify-content: center;
   border-radius: 16px;
   padding: 16px;
-  border: 1px solid black;
 }
 
 .screenshot {
@@ -228,4 +226,107 @@ header {
 
 .btn:active {
   background-color: #2230d2;
+}
+
+/* About Section */
+#about {
+  margin-top: 80px;
+  padding: 114px 24px;
+  background-color: #fff;
+  border-top-right-radius: 80px;
+}
+
+.about-container {
+  display: grid;
+  grid-template-rows: auto auto;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.about h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  color: #172b4d;
+}
+
+.about p {
+  font-size: 16px;
+  color: #344563;
+}
+
+#about-heading {
+  padding-bottom: 15px;
+}
+
+.about .btn {
+  margin-top: 0;
+}
+
+.skill-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.skill-container button {
+  margin-right: 15px;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.skill-container ul {
+  list-style-type: none;
+}
+
+.skill-container > ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 12px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.language-container > div:nth-child(2) {
+  padding: 12px;
+}
+
+.language-item {
+  padding: 9px 12px 9px 12px;
+  background-color: #F7F7F9;
+}
+
+.language-item p {
+  margin-left: 15px;
+  color: #253858;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.language-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.language-item > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.bottom-bar {
+  border-bottom: 1px solid #dfe1e6;
 }
