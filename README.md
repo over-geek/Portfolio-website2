@@ -184,7 +184,7 @@ If you like this project please star this repository.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Marco Joshua David for his help and support.
+I would like to thank Mohammad Mehdi Pazouki for his help and support.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
