@@ -157,6 +157,7 @@ Open liveserver in VS Code
 
 ## 🔭 Future Features <a name="future-features"></a>
 
+- [ ] **[Contact Form]**
 - [ ] **[Desktop Version]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -183,7 +184,7 @@ If you like this project please star this repository.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Marco Almada and Daniela Moreno for their help and Support.
+I would like to thank Marco Joshua David for his help and support.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
