@@ -279,8 +279,58 @@
                     </ul>
                 </div>
             </div>
-        </section>
-        
+    </div>
+    <form id="form" action="https://formspree.io/f/mqkoqdwg" method="POST">
+        <ul>
+            <li>
+                <ul id="contactInGrid">
+                    <li>
+                        <div class="input-div">
+                            <input
+                                type="text"
+                                name="name"
+                                maxlength="30"
+                                required="true"
+                                placeholder="Type your name here..."
+                                id="fullname"
+                            />
+                        </div>
+                    </li>
+                    <li>
+                        <div class="input-div">
+                            <input
+                                id="mail"
+                                type="email"
+                                name="email"
+                                required="true"
+                                placeholder="Type your email here..."
+                            />
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div id="hideBorder" class="input-div">
+                <textarea
+                    name="message"
+                    required="true"
+                    id="message"
+                    maxlength="500"
+                    placeholder="Enter your message here..."
+                    rows="5"
+                ></textarea>
+                </div>
+            </li>
+            <span id="error-message">Invalid Email! Please use lowercase characters</span>
+            <li>
+                <button type="submit" class="btn">
+                  Get in touch
+                </button>
+            </li>
+        </ul>
+    </form>
+</div>
+</section>
     </div>
 </body>
 </html>
