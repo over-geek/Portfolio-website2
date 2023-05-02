@@ -151,13 +151,18 @@ Open liveserver in VS Code
 - Twitter: [@twitterhandle](https://twitter.com/KissiKenneth)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/kenneth-agyare-kissi-673a01186/)
 
+👤 **Author2**
+
+- GitHub: [@mm-pazouki](https://github.com/mm-pazouki)
+- Twitter: [@mm-pazouki](https://twitter.com/mm-pazouki)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/mohammad-mehdi-pazouki)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Contact Form]**
 - [ ] **[Desktop Version]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
