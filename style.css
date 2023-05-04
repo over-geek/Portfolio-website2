@@ -12,7 +12,7 @@ body {
 }
 
 header,
-.main-content,
+.main-content-container,
 .card-container {
   padding: 0 24px;
 }
@@ -23,7 +23,6 @@ header,
   background-color: #fff;
 }
 
-/* Header Section */
 header {
   width: 100%;
   display: flex;
@@ -33,25 +32,27 @@ header {
   padding-bottom: 20px;
 }
 
-/* Logo */
-#logo {
+#logo,
+.fa-bars {
   color: #6070ff;
+}
+
+#logo {
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
   text-decoration: none;
 }
 
-/* hamburger */
 .hamburger {
   position: absolute;
   right: 20px;
   z-index: 10;
   cursor: pointer;
   width: 20px;
-  height: 10px;
+  height: 20px;
+  background: none;
   border: none;
-  background-color: transparent;
 }
 
 .hamburger-top,
@@ -60,8 +61,10 @@ header {
   position: absolute;
   width: 20px;
   height: 2px;
+  top: 0;
   left: 0;
   background-color: #6070ff;
+  transition: all 0.5s;
 }
 
 .hamburger-middle {
@@ -72,7 +75,7 @@ header {
   transform: translateY(10px);
 }
 
-/* Main Section */
+/* main section */
 .main-content {
   height: 600px;
   display: flex;
@@ -92,14 +95,15 @@ header {
 }
 
 .main-content-container p {
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   color: #344563;
   margin-bottom: 10px;
 }
 
-#social-heading {
+#social-heading,
+#about-heading {
   color: #7f8cff;
   text-transform: uppercase;
   margin-bottom: 8px;
@@ -116,13 +120,13 @@ header {
 }
 
 .main-content-container > div {
-  word-break: normal;
+  overflow-wrap: break-word;
 }
 
-/* Card Section */
+/* card-section */
 .card-container {
   display: grid;
-  grid-template-rows: repeat(4, auto);
+  grid-template-rows: auto auto auto auto;
   row-gap: 60px;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -169,14 +173,11 @@ header {
 
 .card-bg-info ul {
   display: flex;
+  margin-left: 30px;
   color: #7a869a;
   font-size: 13px;
   font-weight: 500;
   line-height: 16px;
-}
-
-.card-bg-info ul li {
-  margin-left: 30px;
 }
 
 .card-text {
@@ -205,7 +206,10 @@ header {
   border-radius: 8px;
 }
 
-/* Button */
+.card-bg-info ul li:nth-child(2) {
+  margin-left: 30px;
+}
+
 .btn {
   color: #6070ff;
   background: transparent;
@@ -229,16 +233,12 @@ header {
 }
 
 /* About Section */
-#about {
-  margin-top: 80px;
-  padding: 114px 24px;
-  background-color: #fff;
-  border-top-right-radius: 80px;
-}
-
 .about-container {
   display: grid;
   grid-template-rows: auto auto;
+  background-color: #fff;
+  border-top-right-radius: 80px;
+  padding: 114px 24px;
 }
 
 .about {
@@ -260,14 +260,7 @@ header {
 }
 
 #about-heading {
-  margin-bottom: 26px;
-}
-
-#about-heading a {
-  text-decoration: none;
-  color: #7f8cff;
-  text-transform: uppercase;
-  font-weight: 500;
+  padding-bottom: 15px;
 }
 
 .about .btn {
@@ -305,21 +298,6 @@ header {
   font-weight: 500;
 }
 
-.language-item > div {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.language-container > div:nth-child(2) {
-  padding: 12px;
-}
-
-.language-item {
-  padding: 9px 12px 9px 12px;
-  background-color: #f7f7f9;
-}
-
 .language-item p {
   margin-left: 15px;
   color: #253858;
@@ -332,6 +310,12 @@ header {
   display: flex;
   flex-direction: column;
   gap: 24px;
+}
+
+.language-item > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .bottom-bar {
@@ -429,4 +413,214 @@ header {
 
 #form .btn:active {
   background-color: #2230d2;
+}
+
+/* Media Queries */
+@media (max-width: 400px) {
+  .cards {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .nav-links {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  header {
+    padding: 1.5% 9%;
+  }
+
+  header .fa-bars {
+    display: none;
+  }
+
+  header #logo {
+    display: flex;
+    align-items: center;
+  }
+
+  header nav ul {
+    list-style-type: none;
+    display: flex;
+  }
+
+  header nav ul li {
+    padding: 10px 12px;
+  }
+
+  header nav a {
+    text-decoration: none;
+    font-size: 15px;
+    color: #344563;
+    font-weight: 500;
+    line-height: 20px;
+    cursor: pointer;
+  }
+
+  header nav button {
+    display: none;
+  }
+
+  .main-content {
+    background-image: url(./asset/header-bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 97%;
+    background-position: 100% 10%;
+    justify-content: center;
+  }
+
+  .main-content-container {
+    width: 70%;
+  }
+
+  /* Card Section */
+
+  .card-container {
+    padding: 9%;
+  }
+
+  .cards {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .cards > div {
+    width: 50%;
+  }
+
+  .cards .screenshot {
+    object-fit: cover;
+    height: 100%;
+  }
+
+  .card-description {
+    padding: 1% 2%;
+  }
+
+  .card-2,
+  .card-4 {
+    flex-direction: row-reverse;
+  }
+
+  /* About Section */
+  .about-container {
+    grid-template-columns: 40% 60%;
+    padding: 9%;
+    column-gap: 15px;
+  }
+
+  .skill-container {
+    padding-top: 0;
+  }
+
+  .skill-item:nth-child(1) {
+    padding: 8px 12px 24px 12px;
+  }
+
+  .skill-item:nth-child(2),
+  .skill-item:nth-child(3) {
+    padding: 24px 12px;
+  }
+
+  .language-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .language-list {
+    flex-direction: row;
+    gap: 12px;
+    margin-left: 12px;
+  }
+
+  .language-item div {
+    width: 115px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background-color: #f7f7f9;
+    padding-top: 12px;
+    padding-left: 12px;
+  }
+
+  .language-item img {
+    width: 48px;
+  }
+
+  .language-item p {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  /* Contact Form */
+
+  #contact-container {
+    padding: 12% 30%;
+    background-image: url(./asset/contact-form-bg-desktop.svg);
+    background-size: 94%;
+    background-position: 60% 30%;
+  }
+
+  #btn-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  #form input,
+  #form textarea {
+    border-radius: 0;
+  }
+
+  .form-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+/* laptop L 1440px */
+
+@media (min-width: 1440px) {
+  /* Main section */
+
+  .main-content h1 {
+    font-size: 3rem;
+  }
+
+  .main-content p {
+    font-size: 20px;
+  }
+
+  #social-heading {
+    margin-top: 20px;
+  }
+
+  /* About */
+  .about p {
+    font-size: 18px;
+  }
+
+  /* Card */
+  .card-title {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  .card-bg-info p,
+  .card-bg-info li {
+    font-size: 18px;
+  }
+
+  .card-text {
+    font-size: 18px;
+    margin: 24px 0 24px 0;
+  }
+
+  .card-skills ul li {
+    font-size: 15px;
+  }
 }
