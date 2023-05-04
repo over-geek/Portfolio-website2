@@ -536,13 +536,12 @@ header {
     margin-left: 12px;
   }
 
-  .language-list li div {
+  .language-item div {
     width: 115px;
     height: 100px;
-    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    align-items: start;
     background-color: #f7f7f9;
     padding-top: 12px;
     padding-left: 12px;
