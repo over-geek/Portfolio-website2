@@ -507,7 +507,7 @@ header {
 
   /* About Section */
   .about-container {
-    grid-template-columns: 45% 55%;
+    grid-template-columns: 40% 60%;
     padding: 9%;
     column-gap: 15px;
   }
