@@ -225,6 +225,13 @@ header {
   border-radius: 8px;
 }
 
+.mobile-main-menu ul li {
+  margin-bottom: 20px;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44px;
+}
+
 .card-bg-info ul li:nth-child(2) {
   margin-left: 30px;
 }
@@ -461,20 +468,6 @@ header {
 
 .show-menu {
   transform: translateX(0);
-}
-
-.mobile-main-menu ul {
-  padding: 80px 28px 0 28px;
-  width: 100%;
-  list-style-type: none;
-  color: white;
-}
-
-.mobile-main-menu ul li {
-  margin-bottom: 20px;
-  font-size: 32px;
-  font-weight: 600;
-  line-height: 44px;
 }
 
 .mobile-main-menu ul li a {
