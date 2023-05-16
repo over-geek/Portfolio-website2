@@ -632,6 +632,19 @@ header {
     flex-direction: row-reverse;
   }
 
+  /* Modal */
+  .popup-description {
+    flex-direction: row;
+  }
+
+  .popup-btn a {
+    width: 142px;
+    height: 40px;
+    margin-right: 12px;
+    padding: 0;
+    justify-content: center;
+  }
+
   /* About Section */
   .about-container {
     grid-template-columns: 40% 60%;
