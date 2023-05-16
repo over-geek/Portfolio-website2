@@ -258,6 +258,41 @@ header {
   background-color: #2230d2;
 }
 
+#modal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  transform: translateY(-100%);
+  transition: transform 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+#modal.modal-open {
+  transform: translateY(0%);
+}
+
+#modal.modal-close {
+  transform: translateY(-100%);
+}
+
+#overlay-modal-bg {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 40px 16px 50px 16px;
+}
+
+.main-modal {
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #DFE1E6;
+  border-radius: 16px;
+  padding: 20px 16px 18px 16px;
+}
+
 /* About Section */
 .about-container {
   display: grid;
