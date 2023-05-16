@@ -121,7 +121,43 @@ for(let i=0; i < projectData.length; i++) {
 const btnProjectDetails = document.querySelectorAll('.project-btn');
 btnProjectDetails.forEach((btnElement, index) => {
   btnElement.addEventListener('click', function(event) {
-    console.log(projectData[index]);
-    console.log(workData[index]);
+    const modalWindow = document.querySelector("#modal");
+    modalWindow.innerHTML = `
+    <div id="overlay-modal-bg"></div>
+    <div class="main-modal">
+    <div class="modal-header">
+        <div class="modal-title">
+            <h3 class="title">${projectData[index].title}</h3> 
+            <button type="button" class="btn-close-modal">X</button>
+        </div>
+        <div class="modal-client-details">
+            <ul>
+                <li>${projectData[index].client_info[0]}</li>
+                <li>${projectData[index].client_info[1]}</li>
+                <li>${projectData[index].client_info[2]}</li>
+            </ul>
+        </div>
+        <div class="modal-image">
+            <img src="${projectData[index].image}" alt="Project screenshot" class="image screenshot">
+        </div>
+    </div>
+    <div class="modal-details">
+        <p class="modal-description">
+          ${workData[index].description}
+        </p>
+        <div class="modal-skills-footer-btns">
+            <ul>
+                <li>${projectData[index].skills[0]}</li>
+                <li>${projectData[index].skills[1]}</li>
+                <li>${projectData[index].skills[2]}</li>
+            </ul>
+            <div class="modal-btns-lives">
+                <a href="${workData[index].livelink}" class="">See live</a>
+                <a href="${workData[index].source}" class="">See source</a>
+            </div>
+        </div>
+    </div>
+</div>
+`;
   });
 });
