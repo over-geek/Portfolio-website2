@@ -117,3 +117,11 @@ function displayCards(id) {
 for(let i=0; i < projectData.length; i++) {
   displayCards(i)
 }
+
+const btnProjectDetails = document.querySelectorAll('.project-btn');
+btnProjectDetails.forEach((btnElement, index) => {
+  btnElement.addEventListener('click', function(event) {
+    console.log(projectData[index]);
+    console.log(workData[index]);
+  });
+});
