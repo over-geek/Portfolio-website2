@@ -28,8 +28,8 @@ const projectData = [
     technologies: ['Back End Dev', '2015'],
     text: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     skills: ['html', 'css', 'javascript'],
-    source: 'https://over-geek.github.io/portfolio-project/',
-    livelink: 'https://over-geek.github.io/portfolio-project/',
+    source: 'https://github.com/over-geek/Portfolio-website2',
+    livelink: 'https://over-geek.github.io/overgeek.github.io/',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
   },
   {
@@ -38,8 +38,8 @@ const projectData = [
     technologies: ['Back End Dev', '2015'],
     text: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     skills: ['html', 'css', 'javascript'],
-    source: 'https://over-geek.github.io/portfolio-project/',
-    livelink: 'https://over-geek.github.io/portfolio-project/',
+    source: 'https://github.com/over-geek/Portfolio-website2',
+    livelink: 'https://over-geek.github.io/overgeek.github.io/',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
   },
   {
@@ -48,8 +48,8 @@ const projectData = [
     technologies: ['Back End Dev', '2015'],
     text: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     skills: ['html', 'css', 'javascript'],
-    source: 'https://over-geek.github.io/portfolio-project/',
-    livelink: 'https://over-geek.github.io/portfolio-project/',
+    source: 'https://github.com/over-geek/Portfolio-website2',
+    livelink: 'https://over-geek.github.io/overgeek.github.io/',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
   },
   {
@@ -58,8 +58,8 @@ const projectData = [
     technologies: ['Back End Dev', '2015'],
     text: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     skills: ['html', 'css', 'javascript'],
-    source: 'https://over-geek.github.io/portfolio-project/',
-    livelink: 'https://over-geek.github.io/portfolio-project/',
+    source: 'https://github.com/over-geek/Portfolio-website2',
+    livelink: 'https://over-geek.github.io/overgeek.github.io/',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
   },
 ];
