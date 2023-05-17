@@ -495,7 +495,7 @@ header {
 }
 
 #form button {
-  background-color: #fff;
+  background-color: hsl(0, 0%, 100%);
 }
 
 #form .btn:hover {
