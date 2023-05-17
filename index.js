@@ -171,3 +171,16 @@ document.documentElement.addEventListener('click', (e) => {
     overlay.classList.toggle('overlay-show');
   }
 });
+
+// Form Validation
+const contactForm = document.querySelector('#form');
+contactForm.addEventListener('submit', function(e) {
+  
+  const emailValue = document.querySelector('#mail').value;
+  const emailValueLowerCase = emailValue.toLowerCase();
+  if(emailValue !== emailValueLowerCase) {
+    e.preventDefault();
+    const errorMessage = document.querySelector('#error-message');
+    errorMessage.style.display = 'block';
+  }
+});
