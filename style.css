@@ -489,13 +489,8 @@ header {
   line-height: 24px;
 }
 
-#error-message {
-  color: red;
-  display: none;
-}
-
 #form button {
-  background-color: #fff;
+  background-color: hsl(0, 0%, 100%);
 }
 
 #form .btn:hover {
