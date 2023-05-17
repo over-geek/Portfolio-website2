@@ -174,11 +174,10 @@ document.documentElement.addEventListener('click', (e) => {
 
 // Form Validation
 const contactForm = document.querySelector('#form');
-contactForm.addEventListener('submit', function(e) {
-  
+contactForm.addEventListener('submit', (e) => {
   const emailValue = document.querySelector('#mail').value;
   const emailValueLowerCase = emailValue.toLowerCase();
-  if(emailValue !== emailValueLowerCase) {
+  if (emailValue !== emailValueLowerCase) {
     e.preventDefault();
     const errorMessage = document.querySelector('#error-message');
     errorMessage.style.display = 'block';
