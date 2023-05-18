@@ -210,3 +210,30 @@ function setInputsData() {
   document.getElementById('mail').value = inputsDataObj.email;
   document.getElementById('message').value = inputsDataObj.message;
 }
+
+// Setting values in storage
+function populateStorage() {
+  const inputsDataObj = {};
+  inputsDataObj.name = document.getElementById('fullname').value;
+  inputsDataObj.email = document.getElementById('mail').value;
+  inputsDataObj.message = document.getElementById('message').value;
+  localStorage.setItem('inputsData', JSON.stringify(inputsDataObj));
+  setInputsData();
+}
+
+if (storage('localStorage')) {
+  if (!localStorage.getItem('inputsData')) {
+    populateStorage();
+  } else {
+    setInputsData();
+  }
+}
+
+// Update storage
+const name = document.getElementById('fullname');
+const email = document.getElementById('mail');
+const message = document.getElementById('message');
+
+name.addEventListener('input', populateStorage);
+email.addEventListener('input', populateStorage);
+message.addEventListener('input', populateStorage);
